@@ -1,0 +1,213 @@
+*
+	{
+	margin: 0;
+	color: black;
+	font-family: main;	
+	}
+	
+/*FONT IMPORT SPACE */
+
+@font-face
+	{
+	font-family: Animeland;
+	src: url("fonts/raidercrusaderpunch.ttf");	
+	}
+	
+@font-face
+	{
+	font-family: Heading;
+	src: url("fonts/Heading-Pro-ExtraBold-trial.ttf");	
+	}
+	
+@font-face
+	{
+	font-family: main;
+	src: url("fonts/coolvetica condensed rg.ttf");	
+	}
+	
+@font-face
+	{
+	font-family: Skirmisher;
+	src: url(fonts/skirmisher.ttf);	
+	}
+	
+@font-face
+	{
+	font-family: Street;
+	src: url(fonts/StreetGathering.ttf);	
+	}
+	
+@font-face
+	{
+	font-family: Game;
+	src: url("fonts/go3v2.ttf");	
+	}	
+	
+/* HEADER SPACE */		
+	
+body
+	{
+	background-image: url(central/bg_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	}
+	
+div.header
+	{
+	width: 100%;
+	height: 420px;	
+	background-color: white;
+	color: black;
+	}	
+	
+img.boi
+	{
+	z-index: 1;	
+	top: 2px;
+	right: 5px;
+	position: absolute;
+	width: 30%;
+	z-index: 3;
+	}
+	
+ul.topnav
+	{
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	background-color:#191970;
+	position: sticky;
+	top: 0;	
+	z-index: 2;
+
+	}
+	
+ul.topnav li
+	{
+	float: left; 
+	border-left: 4px solid #ff9912;	
+	}
+
+ul.topnav li:last-child
+	{
+	border-right: 4px solid  #ff9912;		
+	}
+	
+
+ul.topnav a	
+	{
+	padding: 10px 10px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 55px;
+	font-family: Heading;
+	transition: all 0.4s ease-out;
+	}
+	
+ul.topnav a:hover
+	{
+	background-color:  	#ffd700;
+	color: black;	
+	}
+	
+div.head_rule
+	{
+	width: 80%;
+	height: 12px;
+	margin: 2px 2px;
+	background-color: dodgerblue;	
+	}
+
+/*LOWER STRUCTURE*/
+
+div.white_bg
+	{
+	box-sizing: border-box;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.9);
+	margin: 40px auto 120px auto;
+	width: 80%;
+	height: auto;
+	box-shadow: 0px 2px 20px black;
+	text-align: center;
+	padding: 30px 10px 50px 10px;
+	}
+	
+div.rule
+	{
+	margin: 2px auto;
+	width: 90%;
+	height: 10px;
+ 	animation: background 2s;
+ 	animation-iteration-count: infinite;	
+	}
+@keyframes background
+	{
+	0% {background-color:  	#00cc00;}	
+	33.3%	{background-color: #ff6700}
+	66.6% {background-color: #009fff;}
+	100% {background-color: #00cc00;}
+	
+	}
+
+/*LIST.HTML*/
+
+div.gallery {
+  margin: 100px auto;
+  border: 1px solid #ccc;
+  width: 80%;
+  display: block;
+  opacity: 100%;
+  z-index: 2;
+  text-decoration: none;
+  box-shadow: 0px 0px 5px black;
+  transition: all 0.2s ease-in;
+  z-index: 0;
+  position: relative;
+	bottom: 0px;
+		
+}
+
+
+div.gallery:hover {
+  box-shadow: 0px 0px 50px black;
+  z-index: 1;
+  bottom: 30px;
+  opacity: 75%;
+
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  background-color: #232b2b;
+  border-left: 100px solid #414a4c;
+  border-right: 100px solid #414a4c;
+}
+
+	
+/* FOOTER SPACE */	
+	
+div.footer
+	{
+	width: 100%;
+	bottom: 0;
+	height: 200px;
+	background-color: #232b2b;
+	color:white;
+	font-family: main;
+	font-size: 50px; 	
+	}
